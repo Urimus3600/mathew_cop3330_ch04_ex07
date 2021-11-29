@@ -80,7 +80,7 @@ string operator2word(string operation) {
     }
     else{
         cout<< "Incorrect Operator";
-        exit(-1);
+        exit(1);
     }
     //checks for each possible operator, changes to correct word
     //if not a possible operation, error message is printed and program ends
@@ -105,7 +105,7 @@ double calculator(string operation, double num1, double num2) {
     }
     else{
         cout<< "Incorrect Operator";
-        exit(-1);
+        exit(1);
     }
     //checks for each operator case, performs correct operation
     //if not a possible operation, error message is printed and program ends
@@ -135,7 +135,7 @@ double word2digit(string strNum) {
     if(i == 10){
         cout << "Incorrect input, range of integers should be 0-9\n";
         cout << "Incorrect input is " << strNum << endl;
-        exit(-1);
+        exit(1);
     }
     //if no match is found, the word must be an incorrect input and program will end
 
